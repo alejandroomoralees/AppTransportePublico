@@ -57,3 +57,71 @@ cabecera | 1 | 1 | Plaza España → Cortadura
 sentido | 1 | 0 | ida-complejo-deportivo ida-telegrafia ida-estadio ida-balneario ida-residencia ida-san-jose ida-san-felipe ida-plaza-asdrubal ida-comisaria ida-avda-andalucia ida-puertas-tierra ida-renfe ida-avda-puerto ida-plaza-espana
 # Sentido 1: Plaza España -> Cortadura
 sentido | 1 | 1 | vta-plaza-espana vta-avda-puerto vta-puertas-tierra vta-avda-andalucia vta-comisaria vta-plaza-asdrubal vta-san-felipe vta-san-jose vta-residencia vta-balneario vta-estadio vta-telegrafia vta-cortadura vta-complejo-deportivo
+
+
+# ---- Líneas 5 y 7 ----
+# Paradas nuevas y orden de recorrido tomados de la ficha y los planos del operador.
+# Coordenadas de paradas nuevas son aproximadas; los km siguen siendo aproximados como en la línea 1.
+# Línea 5 (algunas salidas prolongan el recorrido hasta C.D. Elcano).
+parada | l5-plaza-sevilla | Plaza Sevilla | 36.53075 | -6.29105
+parada | l5-dique | Dique - Estación de Autobuses | 36.52970 | -6.28982
+parada | l5-cortes-ida | Avenida de las Cortes | 36.52795 | -6.28792
+parada | l5-centro-ida | Centro Comercial | 36.52552 | -6.28610
+parada | l5-huelva-ida | Avenida de Huelva | 36.52362 | -6.28461
+parada | l5-vicente | Vicente Aleixandre | 36.52191 | -6.28391
+parada | l5-guillen-ida | Guillén Moreno | 36.52015 | -6.28435
+parada | l5-portugal-ida | Avenida de Portugal | 36.51833 | -6.28512
+parada | l5-trille-ida | Trille | 36.51572 | -6.28482
+parada | l5-laguna-1 | La Laguna 1 | 36.51178 | -6.28273
+parada | l5-laguna-2 | La Laguna 2 | 36.50878 | -6.28079
+parada | l5-jimena | Jimena de la Frontera | 36.50325 | -6.27169
+parada | l5-ronda-1 | Ronda de Vigilancia 1 | 36.50194 | -6.26831
+parada | l5-ronda-2 | Ronda de Vigilancia 2 | 36.50106 | -6.26551
+parada | l5-azcarate-ida | Avenida Profesora Isabel Azcárate Ristori | 36.50053 | -6.26263
+parada | l5-zona-franca | Zona Franca | 36.50021 | -6.25850
+parada | l5-elcano | C.D. Elcano | 36.49870 | -6.25440
+parada | l5-azcarate-vta | Avenida Profesora Isabel Azcárate Ristori | 36.50036 | -6.26231
+parada | l5-algeciras | Algeciras | 36.50203 | -6.26782
+parada | l5-gta-zona-franca | Glorieta Zona Franca | 36.50384 | -6.27112
+parada | l5-loreto | Barrio de Loreto | 36.51228 | -6.28692
+parada | l5-cerro-moro | Cerro del Moro | 36.51071 | -6.28460
+parada | l5-trille-vta | Trille | 36.51496 | -6.28372
+parada | l5-portugal-vta | Avenida de Portugal | 36.51757 | -6.28422
+parada | l5-guillen-vta | Guillén Moreno | 36.51943 | -6.28371
+parada | l5-cibeles | Cibeles | 36.52143 | -6.28275
+parada | l5-huelva-vta | Avenida de Huelva | 36.52313 | -6.28384
+parada | l5-centro-vta | Centro Comercial | 36.52531 | -6.28566
+parada | l5-cortes-vta | Avenida de las Cortes | 36.52772 | -6.28751
+parada | l5-dique-vta | Dique - Estación de Autobuses | 36.52949 | -6.28930
+parada | l5-casa-mar | Casa del Mar | 36.53011 | -6.29002
+
+# Línea 7: Glorieta Ana Orantes - Simón Bolívar.
+parada | l7-paseo-ida | Paseo Marítimo | 36.50488 | -6.27530
+parada | l7-mirandilla-ida | Mirandilla - Teatro Romano | 36.52740 | -6.29306
+parada | l7-catedral | Catedral | 36.52974 | -6.29290
+parada | l7-mercado-ida | Mercado Central | 36.53236 | -6.29548
+parada | l7-sagasta-ida | Sagasta | 36.53317 | -6.29917
+parada | l7-san-felix-ida | San Félix | 36.53443 | -6.30275
+parada | l7-hospital-mora | Hospital Mora - Playa la Caleta | 36.53575 | -6.30684
+parada | l7-simon-bolivar | Simón Bolívar | 36.53635 | -6.30705
+parada | l7-mirandilla-vta | Mirandilla - Teatro Romano | 36.52745 | -6.29335
+parada | l7-mercado-vta | Mercado Central | 36.53220 | -6.29512
+parada | l7-sagasta-vta | Sagasta | 36.53301 | -6.29903
+parada | l7-san-felix-vta | San Félix | 36.53420 | -6.30242
+parada | l7-mirador | Mirador - Playa Las Mujeres | 36.52681 | -6.29685
+parada | l7-instituto-drago | Instituto Drago | 36.51706 | -6.28432
+parada | l7-amilcar-barca | Avenida Amílcar Barca, 31 | 36.51157 | -6.27983
+
+# Línea 5: Plaza España -> Zona Franca (algunas salidas continúan a C.D. Elcano).
+linea | 5 | Plaza España – Bda. Loreto – La Laguna – Zona Franca | 9A6B3B
+sentido | 5 | 0 | ida-plaza-espana ida-avda-puerto l5-plaza-sevilla l5-dique l5-cortes-ida l5-centro-ida l5-huelva-ida l5-vicente l5-guillen-ida l5-portugal-ida l5-trille-ida l5-laguna-1 l5-laguna-2 ida-estadio l5-jimena l5-ronda-1 l5-ronda-2 l5-azcarate-ida l5-zona-franca l5-elcano
+sentido | 5 | 1 | l5-elcano l5-zona-franca l5-azcarate-vta l5-algeciras l5-gta-zona-franca l5-loreto l5-cerro-moro l5-trille-vta l5-portugal-vta l5-guillen-vta l5-cibeles l5-huelva-vta l5-centro-vta l5-cortes-vta l5-dique-vta l5-casa-mar vta-avda-puerto vta-plaza-espana
+cabecera | 5 | 0 | Plaza España → Zona Franca / C.D. Elcano
+cabecera | 5 | 1 | Zona Franca / C.D. Elcano → Plaza España
+
+# Línea 7: Glorieta Ana Orantes -> Simón Bolívar.
+linea | 7 | Glorieta Ana Orantes – Simón Bolívar | 1687C9
+sentido | 7 | 0 | l7-paseo-ida ida-balneario ida-residencia ida-san-jose ida-san-felipe ida-plaza-asdrubal ida-comisaria ida-avda-andalucia ida-puertas-tierra l7-mirandilla-ida l7-catedral l7-mercado-ida l7-sagasta-ida l7-san-felix-ida l7-hospital-mora l7-simon-bolivar
+sentido | 7 | 1 | l7-simon-bolivar l7-hospital-mora l7-san-felix-vta l7-sagasta-vta l7-mercado-vta l7-mirandilla-vta l7-mirador vta-comisaria vta-plaza-asdrubal l7-instituto-drago l7-amilcar-barca l7-paseo-ida
+cabecera | 7 | 0 | Gta. Ana Orantes → Simón Bolívar
+cabecera | 7 | 1 | Simón Bolívar → Gta. Ana Orantes
