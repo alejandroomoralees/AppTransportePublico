@@ -317,7 +317,8 @@ function textoError(e) {
   if (m === "respuesta") return "Google no devolvió lo esperado: revisa la URL y que el acceso sea «Cualquier persona».";
   if (m === "datos") return "Faltan datos en el trayecto.";
   if (e && (e.name === "AbortError" || e.name === "TypeError")) return "Sin conexión con Google; se reintentará solo.";
-  return "Error: " + m;
+  // Apps Script puede devolver e.toString(), que ya empieza por "Error:".
+  return /^error:\s*/i.test(m) ? m : "Error: " + m;
 }
 
 // Envío como texto plano (petición simple): evita el preflight CORS, que Apps Script no admite.
