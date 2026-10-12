@@ -57,8 +57,10 @@ function doPost(e) {
       Number(t.trayecto) || 0,
       new Date()
     ]);
-    hoja.getRange(hoja.getLastRow(), 2).setNumberFormat("yyyy-mm-dd");
-    hoja.getRange(hoja.getLastRow(), 15).setNumberFormat("yyyy-mm-dd hh:mm");
+    // El trayecto ya está guardado. Un error de formato no debe devolver un fallo
+    // de sincronización, porque la app dejaría la fila pendiente y reintentaría.
+    intentarFormatoFecha(hoja, hoja.getLastRow(), 2, "yyyy-mm-dd");
+    intentarFormatoFecha(hoja, hoja.getLastRow(), 15, "yyyy-mm-dd hh:mm");
 
     return salida({ ok: true });
   } catch (err) {
@@ -83,6 +85,15 @@ function obtenerHoja() {
     hoja.getRange(1, 1, 1, CABECERA.length).setFontWeight("bold");
   }
   return hoja;
+}
+
+function intentarFormatoFecha(hoja, fila, columna, formato) {
+  try {
+    hoja.getRange(fila, columna).setNumberFormat(formato);
+  } catch (err) {
+    // Solo afecta a la presentación: la fecha sigue guardada como valor en la hoja.
+    console.warn("No se pudo aplicar formato de fecha:", err);
+  }
 }
 
 function salida(obj) {
