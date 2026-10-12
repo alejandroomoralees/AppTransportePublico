@@ -72,7 +72,7 @@ una fila, hazlo en la propia hoja.
 | Autobús → Interurbanos de Madrid | `data/interurbanos-madrid.json` | GTFS del CRTM | ✅ 324 rutas, 6.485 paradas |
 | Autobús → Autobuses urbanos de Madrid | `data/urbano-madrid.json` | GTFS del CRTM | ✅ 108 rutas, 3.032 paradas |
 | Autobús → EMT Madrid | `data/emt-madrid.json` | GTFS de EMT | ✅ 235 rutas, 4.932 paradas |
-| Autobús → Autobús de Cádiz (urbano) | `data/urbano-cadiz.json` | Coordenadas tomadas a mano (`manual/urbano-cadiz.txt`); no hay GTFS público | ✅ línea 1 · km aprox.; líneas 2, 3, 5 y 7 pendientes |
+| Autobús → Autobús de Cádiz (urbano) | `data/urbano-cadiz.json` | [Operador](https://tranviadecadizasanfernandoycarraca.es/lineas-urbanas-de-cadiz); [Ayuntamiento: línea 5](https://turismo.cadiz.es/es/node/490) y [línea 7](https://turismo.cadiz.es/es/como-moverse-por-la-ciudad/l%C3%ADnea-7) | ✅ líneas 1, 5 y 7 · coordenadas nuevas y km aproximados; no hay GTFS público |
 | Metro → Metro de Madrid | `data/madrid-metro.json` | GTFS del CRTM; la línea 3 se conserva del conjunto manual anterior porque el feed no contiene viajes para ella | ✅ líneas 1–12 y R |
 | Metro → TMB Barcelona | `data/tmb-barcelona-metro.json` | GTFS de TMB, tipos de ruta 1 (metro) y 7 (funicular) | ✅ 10 líneas de metro y funicular FM |
 | Autobús → TMB Barcelona | `data/tmb-barcelona-bus.json` | GTFS de TMB, tipo de ruta 3 | ✅ 104 líneas |
