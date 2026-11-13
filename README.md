@@ -46,8 +46,7 @@ Los trayectos guardados antes de activar esto no se suben.
 
 La URL y el token se guardan solo en tu iPhone. No los subas a GitHub.
 
-Si cambias `Code.gs` más adelante: **Implementar → Gestionar implementaciones → editar →
-Versión nueva**. Si no, Google sigue sirviendo la versión anterior.
+Si cambias `Code.gs` más adelante, copiar el código a Apps Script desde GitHub no actualiza por sí solo la aplicación web: **Implementar → Gestionar implementaciones → editar → Versión nueva** y guardar el despliegue. Si no, Google sigue sirviendo la versión anterior.
 
 **Columnas de la hoja:** `id, fecha, anio, mes, dia_semana, tipo, ciudad, linea, linea_nombre,
 origen, destino, km, espera_min, trayecto_min, registrado_en`. Las columnas `anio`, `mes`
